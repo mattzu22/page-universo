@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+/* font-family: 'Barlow Condensed', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+/* font-family: 'Bellefair', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+/* font-family: 'Barlow', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+/* font-family: 'Barlow Condensed', sans-serif; */
+
+body{
+    background: url(/src/image/background-crew-desktop.jpg) center center no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.technical-team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 300px;
+}
+
+.technical-team .info{
+    max-width: 490px;
+}
+
+.technical-team .info .title{
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    margin-bottom: 154px;
+    color: #FFFFFF;
+}
+
+.technical-team .info .description .office{
+    font-family: 'Bellefair';
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.technical-team .info .description .name{
+    font-family: 'Bellefair';
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    color: #FFFFFF;
+}
+
+.technical-team .info .description p {
+    font-family: 'Barlow';
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+}
+
+.navegation{
+    display: flex;
+    gap: 24px;
+    margin-top: 120px;
+}
+
+.navegation .bola{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    opacity: 0.17;
+}
+
+.navegation .bola.selecionado{
+    background-color: white;
+    opacity: 1;
+}
+

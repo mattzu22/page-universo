@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+/* font-family: 'Barlow Condensed', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+/* font-family: 'Bellefair', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+/* font-family: 'Barlow', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+/* font-family: 'Barlow Condensed', sans-serif; */
+
+
+body{
+    color: white;
+}
+
+.planets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 160px;
+    margin-top: 200px;
+}
+
+.planets .planet h3{
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    margin-bottom: 97px;
+    color: #FFFFFF;
+}
+
+.planets .info-principal{
+    max-width: 445px;
+}
+
+.planets .info-principal .menu{
+   margin-bottom: 37px;
+}
+
+.planets .info-principal .menu ul{
+    display: flex;
+    gap: 35px;
+}
+
+.planets .info-principal .menu ul li a{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9; 
+}
+
+.planets .info-principal .menu ul li a:hover{
+    border-bottom: 4px solid rgba(255, 255, 255, 0.609);
+    padding-bottom: 12px;
+}
+
+.planets .info-principal .menu ul li a.selecionado{
+    border-bottom: 4px solid rgb(255, 255, 255);
+    padding-bottom:12px;
+}
+
+.planets .description .title{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 115px;
+    margin-bottom: 14px;
+    color: #FFFFFF;
+}
+
+.planets .description .text-1{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    border-bottom: 1px solid #383B4B;
+    padding-bottom: 54px;
+    color: #D0D6F9;
+}
+
+.planets .description .info-planet{
+    display: flex;
+    margin-top: 30px;
+    gap: 70px;
+}
+
+.planets .description .info-planet .info .text{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: #D0D6F9;
+}
+
+.planets .description .info-planet .info h2{
+    font-family: 'Bellefair';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+

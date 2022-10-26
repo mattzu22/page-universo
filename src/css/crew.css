@@ -8,7 +8,7 @@
 /* font-family: 'Barlow Condensed', sans-serif; */
 
 body{
-    background: url(/src/image/background-crew-desktop.jpg) center center no-repeat;
+    background: url(../image/background-crew-desktop.jpg) center center no-repeat;
     min-height: 100vh;
     background-size: cover;
     /* max-width: 1440px; */

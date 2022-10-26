@@ -16,7 +16,7 @@ body{
 }
 
 main{
-     background: url(/src/image/background-home-desktop.jpg) center center no-repeat;  
+     background: url(../image/background-home-desktop.jpg) center center no-repeat;  
      min-height: 100vh; 
      background-size: cover;
      color: white;

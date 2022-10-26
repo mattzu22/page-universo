@@ -15,13 +15,6 @@ body{
     font-size: 1.6rem;
 }
 
-body{
-    background: url(/src/image/background-destination-desktop.jpg)
-    center center no-repeat;
-    min-height: 100vh;
-    background-size: cover;
-}
-
 .header{
     display: flex;
     align-items: center;

@@ -3,34 +3,34 @@ import { screenCrew } from "./screencrew.js";
 import { screenDestination } from "./screendestination.js";
 
 
-screenCrew.renderCrew(api)
+// screenCrew.renderCrew(api)
 
-const bolinhas = document.querySelectorAll(".bola");
-const primeiraDescription = document.getElementById("description-0");
-primeiraDescription.classList.add("selecionado");
+// const bolinhas = document.querySelectorAll(".bola");
+// const primeiraDescription = document.getElementById("description-0");
+// primeiraDescription.classList.add("selecionado");
 
-bolinhas.forEach((bola) => {
-  bola.addEventListener("click", () => {
-    const selecionado = document.querySelector(".bola.selecionado");
-    selecionado.classList.remove("selecionado");
+// bolinhas.forEach((bola) => {
+//   bola.addEventListener("click", () => {
+//     const selecionado = document.querySelector(".bola.selecionado");
+//     selecionado.classList.remove("selecionado");
 
-    bola.classList.add("selecionado");
+//     bola.classList.add("selecionado");
 
-    const abaComSelecionado = document.querySelector(
-      ".description.selecionado"
-    );
+//     const abaComSelecionado = document.querySelector(
+//       ".description.selecionado"
+//     );
 
-    abaComSelecionado.classList.remove("selecionado");
+//     abaComSelecionado.classList.remove("selecionado");
 
-    const idDaPaginaASerMostrada = `description-${bola.id}`;
+//     const idDaPaginaASerMostrada = `description-${bola.id}`;
 
-    const abaASerMostradaNaTela = document.getElementById(
-      idDaPaginaASerMostrada
-    );
+//     const abaASerMostradaNaTela = document.getElementById(
+//       idDaPaginaASerMostrada
+//     );
 
-    abaASerMostradaNaTela.classList.add("selecionado");
-  });
-});
+//     abaASerMostradaNaTela.classList.add("selecionado");
+//   });
+// });
 
 screenDestination.renderDestination(api)
 

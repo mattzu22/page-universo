@@ -11,32 +11,64 @@ body{
     background: url(/src/image/background-crew-desktop.jpg) center center no-repeat;
     min-height: 100vh;
     background-size: cover;
+    /* max-width: 1440px; */
+    margin: 0 auto;
+}
+
+.img-crew{
+    max-width: 100%;
 }
 
 .technical-team{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
-    gap: 300px;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 150px;
 }
 
-.technical-team .info{
-    max-width: 490px;
+.technical-team .crew{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 700px;
+    position: relative;
 }
 
-.technical-team .info .title{
+/* .technical-team .crew .info-crew p{
+    max-width: 400px;
+} */
+
+.technical-team .crew .title{
+    position: absolute;
+    left: 0;
+    margin-left: 0;
     font-family: 'Barlow Condensed';
     font-weight: 400;
     font-size: 28px;
     line-height: 34px;
     letter-spacing: 4.725px;
     text-transform: uppercase;
-    margin-bottom: 154px;
     color: #FFFFFF;
 }
 
-.technical-team .info .description .office{
+.technical-team .crew .description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    position: absolute;
+    gap: 150px;
+    opacity: 0;
+    transition: opacity 0.3s linear; 
+}
+
+.technical-team .crew .description.selecionado{
+    opacity: 1;
+}
+
+.technical-team .crew .description .info-crew .office{
     font-family: 'Bellefair';
     font-size: 32px;
     line-height: 37px;
@@ -47,7 +79,7 @@ body{
     opacity: 0.5;
 }
 
-.technical-team .info .description .name{
+.technical-team .crew .description .info-crew .name{
     font-family: 'Bellefair';
     font-size: 56px;
     line-height: 64px;
@@ -56,17 +88,20 @@ body{
     color: #FFFFFF;
 }
 
-.technical-team .info .description p {
+.technical-team .crew .description .info-crew .bio {
     font-family: 'Barlow';
     font-size: 18px;
     line-height: 32px;
     color: #D0D6F9;
+    max-width: 500px;
 }
 
 .navegation{
     display: flex;
-    gap: 24px;
-    margin-top: 120px;
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    gap: 20px;
 }
 
 .navegation .bola{

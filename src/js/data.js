@@ -3,7 +3,7 @@ export const api = {
     {
       name: "Moon",
       images: {
-        png: "/src/image/image-moon.png",
+        png: "./src/image/image-moon.png",
         webp: "./assets/destination/image-moon.webp",
       },
       description:
@@ -14,7 +14,7 @@ export const api = {
     {
       name: "Mars",
       images: {
-        png: "/src/image/image-mars.png",
+        png: "./src/image/image-mars.png",
         webp: "./assets/destination/image-mars.webp",
       },
       description:
@@ -25,7 +25,7 @@ export const api = {
     {
       name: "Europa",
       images: {
-        png: "/src/image/image-europa.png",
+        png: "./src/image/image-europa.png",
         webp: "./assets/destination/image-europa.webp",
       },
       description:
@@ -36,7 +36,7 @@ export const api = {
     {
       name: "Titan",
       images: {
-        png: "/src/image/image-titan.png",
+        png: "./src/image/image-titan.png",
         webp: "./assets/destination/image-titan.webp",
       },
       description:

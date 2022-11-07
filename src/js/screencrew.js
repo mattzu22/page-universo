@@ -11,8 +11,9 @@ const screenCrew = {
                             <p class="name">${crew.name}</p>
                             <p class="bio"> ${crew.bio}</p> 
                         </div> 
-
-                        <img class="img-crew" src="${crew.images.png}" alt="image crew" />
+                
+                        <img class="img-crew" src="${crew.images.png}" alt="image 
+                        crew"/>
                      </div>`
     })
 

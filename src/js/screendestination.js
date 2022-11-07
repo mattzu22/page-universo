@@ -29,7 +29,7 @@ const screenDestination = {
                      </div>`;
     });
 
-    this.destination.innerHTML = `<h3>Pick your destination</h3>
+    this.destination.innerHTML = `<h3><span class="number">01</span> Pick your destination</h3>
     
                                     ${infoPlanet}
 

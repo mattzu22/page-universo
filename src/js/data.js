@@ -3,7 +3,7 @@ export const api = {
     {
       name: "Moon",
       images: {
-        png: "./src/image/image-moon.png",
+        png: "./src/image/planets/image-moon.png",
         webp: "./assets/destination/image-moon.webp",
       },
       description:
@@ -14,7 +14,7 @@ export const api = {
     {
       name: "Mars",
       images: {
-        png: "./src/image/image-mars.png",
+        png: "./src/image/planets/image-mars.png",
         webp: "./assets/destination/image-mars.webp",
       },
       description:
@@ -25,7 +25,7 @@ export const api = {
     {
       name: "Europa",
       images: {
-        png: "./src/image/image-europa.png",
+        png: "./src/image/planets/image-europa.png",
         webp: "./assets/destination/image-europa.webp",
       },
       description:
@@ -36,7 +36,7 @@ export const api = {
     {
       name: "Titan",
       images: {
-        png: "./src/image/image-titan.png",
+        png: "./src/image/planets/image-titan.png",
         webp: "./assets/destination/image-titan.webp",
       },
       description:
@@ -49,7 +49,7 @@ export const api = {
     {
       name: "Douglas Hurley",
       images: {
-        png: "/src/image/image-douglas-hurley.png",
+        png: "./src/image/crews/image-douglas-hurley.png",
         webp: "./assets/crew/image-douglas-hurley.webp",
       },
       role: "Commander",
@@ -58,7 +58,7 @@ export const api = {
     {
       name: "Mark Shuttleworth",
       images: {
-        png: "/src/image/image-mark-shuttleworth.png",
+        png: "./src/image/crews/image-mark-shuttleworth.png",
         webp: "./assets/crew/image-mark-shuttleworth.webp",
       },
       role: "Mission Specialist",
@@ -67,7 +67,7 @@ export const api = {
     {
       name: "Victor Glover",
       images: {
-        png: "/src/image/image-victor-glover.png",
+        png: "./src/image/crews/image-victor-glover.png",
         webp: "./assets/crew/image-victor-glover.webp",
       },
       role: "Pilot",
@@ -76,7 +76,7 @@ export const api = {
     {
       name: "Anousheh Ansari",
       images: {
-        png: "/src/image/image-anousheh-ansari.png",
+        png: "./src/image/crews/image-anousheh-ansari.png",
         webp: "./assets/crew/image-anousheh-ansari.webp",
       },
       role: "Flight Engineer",
@@ -87,7 +87,7 @@ export const api = {
     {
       name: "Launch vehicle",
       images: {
-        portrait: "./assets/technology/image-launch-vehicle-portrait.jpg",
+        portrait: "./src/image/technology/image-launch-vehicle-portrait.jpg",
         landscape: "./assets/technology/image-launch-vehicle-landscape.jpg",
       },
       description:
@@ -96,7 +96,7 @@ export const api = {
     {
       name: "Spaceport",
       images: {
-        portrait: "./assets/technology/image-spaceport-portrait.jpg",
+        portrait: "./src/image/technology/image-spaceport-portrait.jpg",
         landscape: "./assets/technology/image-spaceport-landscape.jpg",
       },
       description:
@@ -105,7 +105,7 @@ export const api = {
     {
       name: "Space capsule",
       images: {
-        portrait: "./assets/technology/image-space-capsule-portrait.jpg",
+        portrait: "./src/image/technology/image-space-capsule-portrait.jpg",
         landscape: "./assets/technology/image-space-capsule-landscape.jpg",
       },
       description:

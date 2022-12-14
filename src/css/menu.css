@@ -57,7 +57,19 @@ body{
 }
 
 .header .menu{
-    padding: 39px 165px 39px 123px; 
+    padding: 39px 0 39px 123px; 
+    width: 830px;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
 }
+
+@media (max-width: 770px) {
+    .header .menu {
+      width: 540px;
+      padding: 39px 48px;
+    }
+  
+    .header .menu .number {
+      display: none;
+    }
+  }

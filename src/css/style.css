@@ -26,8 +26,9 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 386px;
-    margin-top: 300px;
+    flex-wrap: wrap;
+    gap: 18%;
+    margin-top: 220px;
 }
 
 .page-home .description .info{
@@ -74,4 +75,32 @@ main{
 
 .page-home .description .btn:hover{
     box-shadow: rgba(255, 255, 255, 0.138) 0px 0px 70px 100px;
+}
+
+@media(max-width: 885px){
+    .page-home .description{
+        text-align: center;
+        margin-top: 106px;
+    }
+
+    .page-home .description .info h2{
+        font-size: 2rem;
+    }
+
+    .page-home .description .info p{
+        font-size: 1.6rem;
+    }
+
+    .page-home .description .btn{
+        margin-top: 156px;
+        margin-bottom: 50px;
+    }
+
+    main{
+        background: url(../image/backgrounds/background-home-tablet.jpg) center center no-repeat;  
+        min-height: 100vh; 
+        background-size: cover;
+        color: white;
+   }
+   
 }

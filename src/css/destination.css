@@ -15,16 +15,26 @@ body {
   color: white;
 }
 
-.planets {
+.planet-container{
+  display: none;
+}
+
+.planet-container.selecionado{
+  display: block;
+}
+
+.planet {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 8%;
-  margin-top: 130px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 8rem;
+  margin-top: 100px;
   padding: 0 20px;
 }
 
-.planets .planet h3 {
+.planets .planet-img h3 {
   margin-bottom: 97px;
   font-family: "Barlow Condensed";
   font-weight: 400;
@@ -63,7 +73,7 @@ body {
   cursor: pointer;
 }
 
-.planets .planet img {
+.planets .planet-img img {
   padding-left: 80px;
   width: 100%;
   min-width: 400px;
@@ -83,6 +93,7 @@ body {
   font-family: "Bellefair";
   font-style: normal;
   font-weight: 400;
+  text-transform: uppercase;
   font-size: 100px;
   line-height: 115px;
   margin-bottom: 14px;
@@ -127,15 +138,16 @@ body {
   color: #ffffff;
 }
 
-@media (max-width: 770px) {
-  .planets {
+@media (max-width: 850px) {
+  .planet {
     flex-direction: column;
     width: 100%;
     margin: 100px 0;
   }
 
-  .planets .planet h3 {
-    margin-left: -100px;
+  .planets .planet-img{
+    width: 100%;
+    margin: 0 auto;
   }
 
   .planets .description {
@@ -147,33 +159,33 @@ body {
     margin: 53px 0;
   }
 
-  .planets .planet img {
-    max-width: 300px;
-    padding-left: 0 !important;
-  }
-
-  .planets .planet img {
-    padding-left: 80px;
-    width: 100%;
-    min-width: 400px;
+  .planets .planet-img img {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    min-width: initial;
+    margin: 0 auto;
+    padding-left: initial;
   }
 
   .planets .description .info-planet {
     justify-content: center;
   }
 
-  .header .menu {
-    width: 540px;
-    padding: 39px 48px;
-  }
-
-  .header .menu .number {
-    display: none;
-  }
-
   .planets .description {
     max-width: 570px;
   }
+
+  .planets .planet-img h3 {
+    font-size: 2rem;
+  }
+
+  .planets .description .title {
+    font-size: 8rem;
+  }
   
+  .planets .description .text-planet {
+    font-size: 1.6rem;
+  }
 }
 

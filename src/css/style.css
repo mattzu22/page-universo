@@ -7,35 +7,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 /* font-family: 'Barlow Condensed', sans-serif; */
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-size: 1.6rem;
 }
 
-main{
-     background: url(../image/backgrounds/background-home-desktop.jpg) center center no-repeat;  
-     min-height: 100vh; 
-     background-size: cover;
-     color: white;
+main {
+    background: url(../image/backgrounds/background-home-desktop.jpg) center center no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    color: white;
 }
 
-.page-home .description{
+.page-home .description {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 18%;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 3rem;
     margin-top: 220px;
 }
 
-.page-home .description .info{
+.page-home .description .info {
     max-width: 450px;
 }
 
-.page-home .description .info h2{
+.page-home .description .info h2 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
     font-size: 2.8rem;
@@ -44,7 +46,7 @@ main{
     color: #D0D6F9;
 }
 
-.page-home .description .info .space{
+.page-home .description .info .space {
     font-family: 'Bellefair';
     font-weight: 400;
     font-size: 15rem;
@@ -52,7 +54,7 @@ main{
     color: #FFFFFF;
 }
 
-.page-home .description .info p{
+.page-home .description .info p {
     font-family: 'Barlow';
     font-weight: 400;
     font-size: 1.8rem;
@@ -61,7 +63,7 @@ main{
     color: #D0D6F9;
 }
 
-.page-home .description .btn{
+.page-home .description .btn {
     background-color: #ffffff;
     color: black;
     border-radius: 50%;
@@ -73,34 +75,35 @@ main{
     justify-content: center;
 }
 
-.page-home .description .btn:hover{
+.page-home .description .btn:hover {
     box-shadow: rgba(255, 255, 255, 0.138) 0px 0px 70px 100px;
 }
 
-@media(max-width: 885px){
-    .page-home .description{
+@media(max-width: 753px) {
+    .page-home .description {
+        justify-content: center;
         text-align: center;
-        margin-top: 106px;
+        margin-top: 7rem;
     }
 
-    .page-home .description .info h2{
+    .page-home .description .info h2 {
         font-size: 2rem;
     }
 
-    .page-home .description .info p{
+    .page-home .description .info p {
         font-size: 1.6rem;
     }
 
-    .page-home .description .btn{
+    .page-home .description .btn {
         margin-top: 156px;
         margin-bottom: 50px;
     }
 
-    main{
-        background: url(../image/backgrounds/background-home-tablet.jpg) center center no-repeat;  
-        min-height: 100vh; 
+    main {
+        background: url(../image/backgrounds/background-home-tablet.jpg) center center no-repeat;
+        min-height: 100vh;
         background-size: cover;
         color: white;
-   }
-   
+    }
+
 }

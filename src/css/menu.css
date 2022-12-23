@@ -63,13 +63,21 @@ body{
     backdrop-filter: blur(40.7742px);
 }
 
-@media (max-width: 885px) {
+@media (max-width: 1000px) {
     .header .menu {
-      width: 540px;
+      width: 450px;
       padding: 39px 48px;
     }
   
     .header .menu .number {
       display: none;
+    }
+
+    .header .menu ol li a{
+        font-size: 1.4rem;
+    }
+
+    .header .menu ol{
+        gap: 3.7rem
     }
   }

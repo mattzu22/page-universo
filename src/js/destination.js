@@ -1,9 +1,10 @@
 import { api } from "./data.js";
 import { screenDestination } from "./screendestination.js";
+import { screenDestinationTeste } from "./testedestination.js";
 
-screenDestination.renderDestination(api);
+screenDestinationTeste.renderDestination(api);
 const menuPlanet = document.querySelectorAll(".menu-planet");
-const primeiroPlaneta = document.getElementById("planet-0");
+const primeiroPlaneta = document.getElementById("planet-container-0");
 primeiroPlaneta.classList.add("selecionado");
 
 menuPlanet.forEach((planet) => {
@@ -22,15 +23,15 @@ function adicionarERemoverClassDoMenu(planet) {
 }
 
 function mostrarPlanetaSelecionadoNaTela(planet) {
-  const planetaComSelecionado = document.querySelector(".planet.selecionado");
+  const planetaComSelecionado = document.querySelector(".planet-container.selecionado");
 
   planetaComSelecionado.classList.remove("selecionado");
 
-  const idDoPlanetaASerMostrado = `planet-${planet.id}`;
+  const idDoPlanetaASerMostrado = `planet-container-${planet.id}`;
 
   const planetaASerMostradoNaTela = document.getElementById(
     idDoPlanetaASerMostrado
-  );
+  )
 
   planetaASerMostradoNaTela.classList.add("selecionado");
 }

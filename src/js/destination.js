@@ -4,7 +4,7 @@ import { screenDestinationTeste } from "./testedestination.js";
 
 screenDestinationTeste.renderDestination(api);
 const menuPlanet = document.querySelectorAll(".menu-planet");
-const primeiroPlaneta = document.getElementById("planet-container-0");
+const primeiroPlaneta = document.getElementById("planet-0");
 primeiroPlaneta.classList.add("selecionado");
 
 menuPlanet.forEach((planet) => {
@@ -23,11 +23,11 @@ function adicionarERemoverClassDoMenu(planet) {
 }
 
 function mostrarPlanetaSelecionadoNaTela(planet) {
-  const planetaComSelecionado = document.querySelector(".planet-container.selecionado");
+  const planetaComSelecionado = document.querySelector(".planet.selecionado");
 
   planetaComSelecionado.classList.remove("selecionado");
 
-  const idDoPlanetaASerMostrado = `planet-container-${planet.id}`;
+  const idDoPlanetaASerMostrado = `planet-${planet.id}`;
 
   const planetaASerMostradoNaTela = document.getElementById(
     idDoPlanetaASerMostrado

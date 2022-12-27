@@ -15,16 +15,7 @@ body {
   color: white;
 }
 
-.planet-container{
-  display: none;
-}
-
-.planet-container.selecionado{
-  display: block;
-}
-
 .planet {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
@@ -32,6 +23,11 @@ body {
   gap: 8rem;
   margin-top: 100px;
   padding: 0 20px;
+  display: none;
+}
+
+.planet.selecionado{
+  display: flex;
 }
 
 .planets .planet-img h3 {
@@ -94,7 +90,7 @@ body {
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 100px;
+  font-size: 80px;
   line-height: 115px;
   margin-bottom: 14px;
   color: #ffffff;

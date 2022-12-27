@@ -5,8 +5,8 @@ const screenDestinationTeste = {
         let infoPlanet = "";
 
         api.destinations.forEach((destination, index) => {
-            infoPlanet += `<div class="planet-container" id="planet-container-${index}">
-                            <div class="planet">
+            infoPlanet += `
+                            <div class="planet" id="planet-${index}">
                                 <div class="planet-img">
                                     <h3><span class="number">01</span> Pick your destination</h3>
                                     <img src="${destination.images.png}" alt="imagem de um planeta" />
@@ -40,9 +40,8 @@ const screenDestinationTeste = {
                                     </div>
                                 </div>
                             </div>
-                           </div>`;
+                           `;
         });
-        console.log(infoPlanet);
 
         this.destination.innerHTML = `${infoPlanet} `;
     },

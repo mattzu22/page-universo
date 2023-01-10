@@ -81,3 +81,9 @@ body{
         gap: 3.7rem
     }
   }
+
+  @media (max-width: 650px) {
+    .header .menu{
+        display: none;
+    }
+  }

@@ -15,12 +15,11 @@ body {
 
 .technical-team {
     padding: 0 20px;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .technical-team .crew {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
@@ -51,8 +50,6 @@ body {
 .technical-team .crew .description {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    /* gap: 150px; */
 }
 
 .technical-team .crew .description .info-crew .office {
@@ -105,22 +102,18 @@ body {
 
 @media(max-width: 768px) {
     .technical-team .crew {
-        flex-wrap: wrap;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* gap: initial; */
     }
 
     .technical-team .crew .description {
         align-items: center;
+        width: 100%;
     }
 
     .technical-team .crew .description .info-crew {
         text-align: center;
-    }
-
-    .technical-team {
-        width: 90%;
     }
 
     .technical-team .crew .description .title {

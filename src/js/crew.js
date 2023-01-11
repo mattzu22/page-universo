@@ -1,9 +1,9 @@
 import { api } from "./data.js";
-import { screenCrew } from "./screencrew.js";
-
+// import { screenCrew } from "./screencrew.js";
+import { screenCrew } from "./testecrew.js";
 screenCrew.renderCrew(api)
 const bolinhas = document.querySelectorAll(".bola");
-const primeiraDescription = document.getElementById("description-0");
+const primeiraDescription = document.getElementById("crew-0");
 primeiraDescription.classList.add("selecionado");
 
 bolinhas.forEach((bola) => {
@@ -24,12 +24,12 @@ function adicionarOuRemoverClassDoMenu(bola){
 
 function mostrarCrewSelecionadoNatela(bola){
     const abaComSelecionado = document.querySelector(
-        ".description.selecionado"
+        ".crew.selecionado"
       );
   
       abaComSelecionado.classList.remove("selecionado");
   
-      const idDaPaginaASerMostrada = `description-${bola.id}`;
+      const idDaPaginaASerMostrada = `crew-${bola.id}`;
   
       const abaASerMostradaNaTela = document.getElementById(
         idDaPaginaASerMostrada

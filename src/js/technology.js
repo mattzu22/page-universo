@@ -1,5 +1,6 @@
 import { api } from "./data.js"
-import { screenTechnology } from "./screentechnology.js"
+// import { screenTechnology } from "./screentechnology.js"
+import { screenTechnology } from "./testetechnology.js"
 
 screenTechnology.renderTechnology(api)
 const menuTechno = document.querySelectorAll(".menu-techno");
@@ -24,7 +25,7 @@ function adicionarOuRemoverClassDoMenu(techno){
 }
 
 function mostrarTechnoSelecionadoNaTela(techno){
-    const technoComSelecionado = document.querySelector(".info-img.selecionado");
+    const technoComSelecionado = document.querySelector(".technology.selecionado");
 
     technoComSelecionado.classList.remove("selecionado");
 

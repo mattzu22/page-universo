@@ -14,18 +14,26 @@ body{
     color: white;
 }
 
-.technology{
+.technologies{
     max-width: 1270px;
-    padding: 100px 0 0 0;
+    padding: 100px 25px 0;
     margin: 0 auto;
 }
 
-.technology .description{
+.technology{
+    display: none;
+}
+
+.technology.selecionado{
+    display: block;
+}
+
+.technologies .description{
     display: flex;
     align-items: center;
 }
 
-.technology h2{
+.technologies h2{
     font-family: 'Barlow Condensed';
     font-weight: 400;
     font-size: 28px;
@@ -35,15 +43,15 @@ body{
     margin-bottom: 50px;
 }
 
-.technology .number{
+.technologies .number{
     opacity: 0.25;
 }
 
-.technology .description .nav-techno{
+.technologies .description .nav-techno{
     margin-right: 80px;
 }
 
-.technology .description .nav-techno ol li a{
+.technologies .description .nav-techno ol li a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,12 +66,12 @@ body{
     color: white;
 }
 
-.technology .description .nav-techno ol li a.selecionado{
+.technologies .description .nav-techno ol li a.selecionado{
    background-color: white;
    color: black;
 }
 
-.technology .description .info-tech{
+.technologies .description .info-tech{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,16 +79,16 @@ body{
     gap: 15px;
 }
 
-.technology .description .info-tech .info{
-    width: 470px;
+.technologies .description .info-tech .info{
+    max-width: 470px;
 }
 
-.technology .description .info-tech .img-tech{
+.technologies .description .info-tech .img-tech{
     max-width: 100%;
     min-width: 300px;
 }
 
-.technology .description .info-tech .info .sub-title{
+.technologies .description .info-tech .info .sub-title{
     font-family: 'Bellefair', serif;
     font-style: normal;
     font-weight: 400;
@@ -91,7 +99,7 @@ body{
     margin-bottom: 11px;
 }
 
-.technology .description .info-tech .info .title{
+.technologies .description .info-tech .info .title{
     font-family: 'Bellefair';
     text-transform: uppercase;
     font-style: normal;
@@ -102,7 +110,7 @@ body{
     margin-bottom: 17px;
 }
 
-.technology .description .info-tech .info p{
+.technologies .description .info-tech .info p{
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
@@ -110,4 +118,68 @@ body{
     line-height: 32px;
     color: #D0D6F9;
     max-width: 444px;
+}
+
+@media(max-width: 960px){
+    .technologies .description{
+        flex-direction: column-reverse;
+    }
+    
+    .technologies .description .nav-techno ol {
+        display: flex;
+        justify-content: center;
+        gap: 16%;
+        margin-top: 40px;
+    }
+
+    .technologies .description .info-tech .info .title{
+        font-size: 40px;
+    }
+
+    .technologies h2{
+        font-size: 20px;  
+    }
+}
+
+@media(max-width: 768px){
+    .technologies .description{
+        flex-direction: column;
+    }
+
+    .technologies .description .info-tech{
+       flex-direction: column-reverse;
+    }
+
+    .technologies .description .nav-techno{
+        margin-right: 0;
+    }
+
+    .technologies .description .info-tech .img-tech{
+        width: 100%;
+        height: 310px;
+    }
+
+    .technologies{
+        padding: 100px 0 100px 0;
+    }
+
+    .technologies .description .info-tech .info{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .technologies .description .info-tech .info p{
+        font-size: 16px;
+    }
+
+    .technologies .description .nav-techno ol li a{
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .technologies h2{
+        font-size: 16px;
+        text-align: center;
+    }
 }

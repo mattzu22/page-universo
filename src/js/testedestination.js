@@ -43,7 +43,7 @@ const screenDestinationTeste = {
                            `;
         });
 
-        this.destination.innerHTML = `${infoPlanet} `;
+        this.destination.innerHTML = `${infoPlanet}`;
     },
 };
 

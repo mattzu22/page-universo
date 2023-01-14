@@ -1,6 +1,5 @@
 import { api } from "./data.js"
-// import { screenTechnology } from "./screentechnology.js"
-import { screenTechnology } from "./testetechnology.js"
+import { screenTechnology } from "./screentechnology.js"
 
 screenTechnology.renderTechnology(api)
 const menuTechno = document.querySelectorAll(".menu-techno");

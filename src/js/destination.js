@@ -1,8 +1,7 @@
 import { api } from "./data.js";
 import { screenDestination } from "./screendestination.js";
-import { screenDestinationTeste } from "./testedestination.js";
 
-screenDestinationTeste.renderDestination(api);
+screenDestination.renderDestination(api);
 const menuPlanet = document.querySelectorAll(".menu-planet");
 const primeiroPlaneta = document.getElementById("planet-0");
 primeiroPlaneta.classList.add("selecionado");

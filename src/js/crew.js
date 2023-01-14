@@ -1,6 +1,5 @@
 import { api } from "./data.js";
-// import { screenCrew } from "./screencrew.js";
-import { screenCrew } from "./testecrew.js";
+import { screenCrew } from "./screencrew.js";
 screenCrew.renderCrew(api)
 const bolinhas = document.querySelectorAll(".bola");
 const primeiraDescription = document.getElementById("crew-0");

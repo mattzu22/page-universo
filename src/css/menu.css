@@ -24,15 +24,20 @@ body {
     padding: 60px 0 0 49px;
 }
 
-.header .menu-hamburguer{
+.header .menu-hamburguer {
     display: none;
     position: absolute;
     right: 30px;
 }
 
-.header i{
-   font-size: 25px;
-   color: white;
+.header .menu-mob {
+    display: none;
+}
+
+.header .menu-mobile i{
+    z-index: 1;
+    font-size: 25px;
+    color: white;
 }
 
 .header .menu ol {
@@ -97,9 +102,50 @@ body {
     .header .menu {
         display: none;
     }
-
+    
     .header .menu-hamburguer {
         display: flex;
         align-items: center;
     }
+    
+    .menu-mobile{
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu-mob.selecionado {
+        display: block;
+        position: absolute;
+        width: 55%;
+        height: 100vh;
+        right: 0;
+        top: 0px;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+    }
+
+    .menu-mob {
+        padding: 170px 0 0 32px;
+    }
+
+    .menu-mob li {
+        margin-bottom: 32px;
+    }
+
+    .menu-mob li a {
+        font-family: 'Barlow Condensed';
+        font-weight: 400;
+        font-size: 1.6rem;
+        letter-spacing: 2.7px;
+        color: #FFFFFF;
+    }
+
+    .menu-mob li a .number {
+        font-family: 'Barlow Condensed';
+        font-weight: 700;
+        font-size: 1.6rem;
+        letter-spacing: 2.7px;
+        color: #FFFFFF;
+    }
+
 }

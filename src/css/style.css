@@ -108,3 +108,36 @@ main {
     }
 
 }
+
+@media(max-width: 650px) {
+    .page-home .description .info .space {
+        font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100px;
+    text-align: center;
+    color: #FFFFFF; 
+    }
+
+    .page-home .description .info h2 {
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+    }
+
+    .page-home .description .info p {
+        margin-top: 1.6rem;    
+    }
+
+    .page-home .description .btn {
+        margin-top: 81px;
+       
+    }
+
+}

@@ -106,6 +106,7 @@ body {
     .header .menu-hamburguer {
         display: flex;
         align-items: center;
+        position: fixed;
     }
     
     .menu-mobile{
@@ -115,11 +116,11 @@ body {
     
     .menu-mob.selecionado {
         display: block;
-        position: absolute;
+        position: fixed;
         width: 55%;
-        height: 100vh;
+        min-height: 100vh;
         right: 0;
-        top: 0px;
+        top: 0;
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(40.7742px);
     }

@@ -23,11 +23,19 @@ body {
   gap: 8rem;
   margin-top: 100px;
   padding: 0 20px;
-  display: none;
+  display: flex;
 }
 
-.planet.selecionado{
-  display: flex;
+.texto-planet, .img-planet{
+  /* display: none; */
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease-in-out;
+}
+
+.selecionado{
+  /* display: block; */
+  height: 450px;
 }
 
 .planets .planet-img h3 {

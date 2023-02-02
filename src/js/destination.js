@@ -2,14 +2,15 @@ import { api } from "./data.js";
 import { screenDestination } from "./screendestination.js";
 
 screenDestination.renderDestination(api);
+
+colocarClassSelecionado()
+
 const menuPlanet = document.querySelectorAll(".menu-planet");
-const primeiroPlaneta = document.getElementById("planet-0");
-primeiroPlaneta.classList.add("selecionado");
 
 menuPlanet.forEach((planet) => {
   planet.addEventListener("click", () => {
     adicionarERemoverClassDoMenu(planet);
-
+    
     mostrarPlanetaSelecionadoNaTela(planet);
   });
 });
@@ -17,20 +18,34 @@ menuPlanet.forEach((planet) => {
 function adicionarERemoverClassDoMenu(planet) {
   const selecionado = document.querySelector(".menu-planet.selecionado");
   selecionado.classList.remove("selecionado");
-
+  
   planet.classList.add("selecionado");
 }
 
 function mostrarPlanetaSelecionadoNaTela(planet) {
-  const planetaComSelecionado = document.querySelector(".planet.selecionado");
+  const imgComSelecionado = document.querySelector(".img-planet.selecionado");
+  
+  imgComSelecionado.classList.remove("selecionado");
+  
+  const textComSelecionado = document.querySelector(".texto-planet.selecionado");
+  
+  textComSelecionado.classList.remove("selecionado");
+  
+  const idDaImgParaMostrar = `img-planet-${planet.id}`;
+  
+  const idDoTextoParaMostrar = `info-planet-${planet.id}`;
+  
+  const imgNaTela = document.getElementById(idDaImgParaMostrar);
+  imgNaTela.classList.add("selecionado")
+  
+  const textoNaTela = document.getElementById(idDoTextoParaMostrar);
+  textoNaTela.classList.add("selecionado")
+}
 
-  planetaComSelecionado.classList.remove("selecionado");
-
-  const idDoPlanetaASerMostrado = `planet-${planet.id}`;
-
-  const planetaASerMostradoNaTela = document.getElementById(
-    idDoPlanetaASerMostrado
-  )
-
-  planetaASerMostradoNaTela.classList.add("selecionado");
+function colocarClassSelecionado(){
+  const firstImg = document.getElementById("img-planet-0");
+  const firstInfo = document.getElementById("info-planet-0");
+  
+  firstImg.classList.add("selecionado");
+  firstInfo.classList.add("selecionado");
 }

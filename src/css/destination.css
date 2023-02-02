@@ -27,15 +27,15 @@ body {
 }
 
 .texto-planet, .img-planet{
-  /* display: none; */
-  overflow: hidden;
+  display: none;
+  /* overflow: hidden;
   height: 0;
-  transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out; */
 }
 
 .selecionado{
-  /* display: block; */
-  height: 450px;
+  display: block;
+  /* height: 100%; */
 }
 
 .planets .planet-img h3 {

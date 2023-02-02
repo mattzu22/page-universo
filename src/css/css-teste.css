@@ -26,24 +26,16 @@ body {
   display: flex;
 }
 
-.img-planet{
-    display: none;
+.texto-planet, .img-planet{
+  /* display: none; */
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease-in-out;
 }
 
-.img-planet.selecionado{
-    display: block;
-}
-
-.texto-planet{
-    display: none;
-}
-
-.texto-planet.selecionado{
-    display: block;
-}
-
-.planet.selecionado{
-  display: flex;
+.selecionado{
+  /* display: block; */
+  height: 450px;
 }
 
 .planets .planet-img h3 {

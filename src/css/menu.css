@@ -31,7 +31,11 @@ body {
 }
 
 .header .menu-mob {
-    display: none;
+    /* display: none; */
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    transition: width 0.3s ease-in-out;
 }
 
 .header .menu-mobile i{
@@ -106,14 +110,14 @@ body {
     .header .menu-hamburguer {
         display: flex;
         align-items: center;
-        position: fixed;
+        /* position: fixed; */
     }
     
     .menu-mobile{
         display: flex;
         align-items: center;
     }
-    
+
     .menu-mob.selecionado {
         display: block;
         position: fixed;
@@ -123,8 +127,10 @@ body {
         top: 0;
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(40.7742px);
+
     }
 
+    
     .menu-mob {
         padding: 170px 0 0 32px;
     }

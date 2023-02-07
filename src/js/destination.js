@@ -23,29 +23,29 @@ function adicionarERemoverClassDoMenu(planet) {
 }
 
 function mostrarPlanetaSelecionadoNaTela(planet) {
-  const imgComSelecionado = document.querySelector(".img-planet.selecionado");
+  const imgComSelecionado = document.querySelector(".img-planet.selecionada");
   
-  imgComSelecionado.classList.remove("selecionado");
+  imgComSelecionado.classList.remove("selecionada");
   
-  const textComSelecionado = document.querySelector(".texto-planet.selecionado");
+  const textComSelecionado = document.querySelector(".texto-planet.selecionada");
   
-  textComSelecionado.classList.remove("selecionado");
+  textComSelecionado.classList.remove("selecionada");
   
   const idDaImgParaMostrar = `img-planet-${planet.id}`;
   
   const idDoTextoParaMostrar = `info-planet-${planet.id}`;
   
   const imgNaTela = document.getElementById(idDaImgParaMostrar);
-  imgNaTela.classList.add("selecionado")
+  imgNaTela.classList.add("selecionada")
   
   const textoNaTela = document.getElementById(idDoTextoParaMostrar);
-  textoNaTela.classList.add("selecionado")
+  textoNaTela.classList.add("selecionada")
 }
 
 function colocarClassSelecionado(){
   const firstImg = document.getElementById("img-planet-0");
   const firstInfo = document.getElementById("info-planet-0");
   
-  firstImg.classList.add("selecionado");
-  firstInfo.classList.add("selecionado");
+  firstImg.classList.add("selecionada");
+  firstInfo.classList.add("selecionada");
 }

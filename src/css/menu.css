@@ -26,16 +26,15 @@ body {
 
 .header .menu-hamburguer {
     display: none;
-    position: absolute;
+    position: fixed;
     right: 30px;
 }
 
 .header .menu-mob {
-    /* display: none; */
+    position: absolute;
     overflow: hidden;
-    height: 0;
     width: 0;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
 
 .header .menu-mobile i{
@@ -110,7 +109,6 @@ body {
     .header .menu-hamburguer {
         display: flex;
         align-items: center;
-        /* position: fixed; */
     }
     
     .menu-mobile{
@@ -119,7 +117,6 @@ body {
     }
 
     .menu-mob.selecionado {
-        display: block;
         position: fixed;
         width: 55%;
         min-height: 100vh;
@@ -127,11 +124,6 @@ body {
         top: 0;
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(40.7742px);
-
-    }
-
-    
-    .menu-mob {
         padding: 170px 0 0 32px;
     }
 

@@ -19,6 +19,9 @@ body {
     margin: 0 auto;
 }
 
+
+
+
 .technical-team .crew {
     align-items: center;
     justify-content: space-between;
@@ -34,7 +37,24 @@ body {
 .img-crew {
     max-width: 100%;
     min-width: 300px;
+    display: none;
 }
+
+/* teste do js  */
+
+.img-crew.selecionado {
+    display: block;
+}
+
+.info-crew{
+    display: none;
+}
+
+.info-crew.selecinado {
+    display: block;
+}
+
+/* teste do js */
 
 .technical-team .crew .description .title {
     margin-bottom: 120px;

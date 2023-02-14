@@ -19,19 +19,12 @@ body {
     margin: 0 auto;
 }
 
-
-
-
 .technical-team .crew {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
     margin-top: 30px;
-    display: none;
-}
-
-.technical-team .crew.selecionado {
-    display: flex;
 }
 
 .img-crew {
@@ -40,7 +33,6 @@ body {
     display: none;
 }
 
-/* teste do js  */
 
 .img-crew.selecionado {
     display: block;
@@ -50,11 +42,9 @@ body {
     display: none;
 }
 
-.info-crew.selecinado {
+.info-crew.selecionado {
     display: block;
 }
-
-/* teste do js */
 
 .technical-team .crew .description .title {
     margin-bottom: 120px;

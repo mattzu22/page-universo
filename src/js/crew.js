@@ -1,39 +1,48 @@
 import { api } from "./data.js";
 import { screenCrew } from "./screencrew.js";
-screenCrew.renderCrew(api)
+screenCrew.renderCrew(api);
 const bolinhas = document.querySelectorAll(".bola");
-const primeiraDescription = document.getElementById("crew-0");
-primeiraDescription.classList.add("selecionado");
+
+mostrarClassSelecionado()
 
 bolinhas.forEach((bola) => {
   bola.addEventListener("click", () => {
+    adicionarOuRemoverClassDoMenu(bola);
 
-    adicionarOuRemoverClassDoMenu(bola)
-
-    mostrarCrewSelecionadoNatela(bola)
+    mostrarCrewSelecionadoNatela(bola);
   });
 });
 
-function adicionarOuRemoverClassDoMenu(bola){
-    const selecionado = document.querySelector(".bola.selecionado");
-    selecionado.classList.remove("selecionado");
+function adicionarOuRemoverClassDoMenu(bola) {
+  const selecionado = document.querySelector(".bola.selecionado");
+  selecionado.classList.remove("selecionado");
 
-    bola.classList.add("selecionado");
+  bola.classList.add("selecionado");
 }
 
-function mostrarCrewSelecionadoNatela(bola){
-    const abaComSelecionado = document.querySelector(
-        ".crew.selecionado"
-      );
-  
-      abaComSelecionado.classList.remove("selecionado");
-  
-      const idDaPaginaASerMostrada = `crew-${bola.id}`;
-      console.log(idDaPaginaASerMostrada);
-  
-      const abaASerMostradaNaTela = document.getElementById(
-        idDaPaginaASerMostrada
-      );
-  
-      abaASerMostradaNaTela.classList.add("selecionado");
+function mostrarCrewSelecionadoNatela(bola) {
+  const imgComSelecionado = document.querySelector(".img-crew.selecionado");
+
+  imgComSelecionado.classList.remove("selecionado");
+
+  const infoComSelecionado = document.querySelector(".info-crew.selecionado");
+
+  infoComSelecionado.classList.remove("selecionado");
+
+  const imageASerMostrada = `img-crew-${bola.id}`;
+
+  const infoASerMostrada = `info-crew-${bola.id}`;
+
+  const imgNaTela = document.getElementById(imageASerMostrada);
+  imgNaTela.classList.add("selecionado");
+
+  const infoNaTela = document.getElementById(infoASerMostrada);
+  infoNaTela.classList.add("selecionado");
+}
+
+function mostrarClassSelecionado() {
+  const firstImage = document.getElementById("img-crew-0");
+  const firstDescription = document.getElementById("info-crew-0");
+  firstDescription.classList.add("selecionado");
+  firstImage.classList.add("selecionado");
 }

@@ -20,13 +20,20 @@ body{
     margin: 0 auto;
 }
 
-.technology{
-    display: none;
-}
+/* css refatorado */
+    .info, .img-tech{
+        display: none;
+    }
 
-.technology.selecionado{
-    display: block;
-}
+    .info.selecionado{
+        display: block;
+    }
+
+    .img-tech.selecionado{
+       display: block;     
+    }
+
+/*  */
 
 .technologies .description{
     display: flex;

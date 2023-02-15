@@ -30,9 +30,9 @@ const screenTechnology = {
                                         <div class="description">
                                             <nav class="nav-techno">
                                                 <ol>
-                                                    <li><a href="#" class="menu-techno selecionado" id="0">1</a></li>
-                                                    <li><a href="#" class="menu-techno" id="1">2</a></li>
-                                                    <li><a href="#" class="menu-techno" id="2">3</a></li>
+                                                    <li><a class="menu-techno selecionado" id="0">1</a></li>
+                                                    <li><a class="menu-techno" id="1">2</a></li>
+                                                    <li><a class="menu-techno" id="2">3</a></li>
                                                 </ol>
                                             </nav>
 

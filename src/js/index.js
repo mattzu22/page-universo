@@ -14,9 +14,13 @@
 const menuHamburguer = document.querySelector('.menu-hamburguer')
 
 menuHamburguer.addEventListener('click', () =>{
+    
     const iconeMenuHamburguer = document.querySelector('i')
-
+    
     const menuComSelecionado = document.querySelector('.menu-mob')
-
+    
     menuComSelecionado.classList.toggle('selecionado')
+    if(menuComSelecionado){
+        iconeMenuHamburguer.classList.toggle('fixed')
+    }    
 })

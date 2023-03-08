@@ -1,53 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universo</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Universo</title>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/menu.css" />
+    <link rel="stylesheet" href="./src/css/destination.css" />
+  </head>
 
-  <link rel="stylesheet" href="./src/css/reset.css" />
-  <link rel="stylesheet" href="./src/css/menu.css" />
-  <link rel="stylesheet" href="./src/css/destination.css" />
-</head>
+  <body>
+    <header class="header">
+      <img class="logo" src="./src/image/logo.svg" alt="logo" />
 
-<body>
-  <header class="header">
-    <img class="logo" src="./src/image/logo.svg" alt="logo">
-
-    <nav class="menu">
+      <nav class="menu">
         <ol>
-            <li><a href="./index.html" class="link"><span class="number">00</span> HOME</a></li>
-            <li><a href="./destination.html" class="link selecionado"><span class="number">01</span> DESTINATION</a></li>
-            <li><a href="./crew.html" class="link"><span class="number">02</span> CREW</a></li>
-            <li><a href="./technology.html" class="link"><span class="number">03</span> TECHNOLOGY</a></li>
+          <li>
+            <a href="./index.html" class="link"
+              ><span class="number">00</span> HOME</a
+            >
+          </li>
+          <li>
+            <a href="./destination.html" class="link selecionado"
+              ><span class="number">01</span> DESTINATION</a
+            >
+          </li>
+          <li>
+            <a href="./crew.html" class="link"
+              ><span class="number">02</span> CREW</a
+            >
+          </li>
+          <li>
+            <a href="./technology.html" class="link"
+              ><span class="number">03</span> TECHNOLOGY</a
+            >
+          </li>
         </ol>
-    </nav>
+      </nav>
 
-    <nav class="menu-mobile">
-        <i class="fa-solid fa-bars menu-hamburguer"></i>
-
-        <!-- <i class="fa-solid fa-x"></i> -->
+      <nav class="menu-mobile">
+        <div class="center">
+          <div></div>
+        </div>
 
         <ul class="menu-mob">
-            <li><a href="./index.html" class="link"><span class="number">00</span> HOME</a></li>
-            <li><a href="./destination.html" class="link"><span class="number">01</span> DESTINATION</a></li>
-            <li><a href="./crew.html" class="link"><span class="number">02</span> CREW</a></li>
-            <li><a href="./technology.html" class="link"><span class="number">03</span> TECHNOLOGY</a></li>
+          <li>
+            <a href="./index.html" class="link"
+              ><span class="number">00</span> HOME</a
+            >
+          </li>
+          <li>
+            <a href="./destination.html" class="link"
+              ><span class="number">01</span> DESTINATION</a
+            >
+          </li>
+          <li>
+            <a href="./crew.html" class="link"
+              ><span class="number">02</span> CREW</a
+            >
+          </li>
+          <li>
+            <a href="./technology.html" class="link"
+              ><span class="number">03</span> TECHNOLOGY</a
+            >
+          </li>
         </ul>
-    </nav>
+      </nav>
+    </header>
 
-</header>
+    <section class="planets"></section>
 
-
-  <section class="planets">
-  
-  </section>
-
-  <script src="./src/js/index.js" type="module"></script>
-  <script src="./src/js/destination.js" type="module"></script>
-  <script src="https://kit.fontawesome.com/049c2c2b37.js" crossorigin="anonymous"></script>
-</body>
-
+    <script src="./src/js/index.js" type="module"></script>
+    <script src="./src/js/destination.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/049c2c2b37.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

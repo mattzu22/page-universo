@@ -151,4 +151,38 @@ body {
       color: #FFFFFF;
   }
 
+  .center {
+    margin-right: 40px;
+    width: 25px;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+  }
+
+  .center.selecionado {
+    position: fixed;
+  }
+  
+  .center:before,
+  .center:after,
+  .center div
+   {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 3px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: 0.5s;
+  }
+  .center.selecionado:before {
+    transform: translateY(8.5px) rotate(135deg);
+  }
+  .center.selecionado:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+  .center.selecionado div {
+    transform: scale(0);
+  }
+
 }

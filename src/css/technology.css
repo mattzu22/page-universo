@@ -24,6 +24,7 @@ body {
 .info,
 .img-tech {
   display: none;
+  animation: effect 0.7s alternate;
 }
 
 .info.selecionado {
@@ -32,6 +33,15 @@ body {
 
 .img-tech.selecionado {
   display: block;
+}
+
+@keyframes effect {
+	from {
+		transform: scale(0.9);
+	}
+	to {
+		transform: scale(1);
+	}
 }
 
 .technologies .description {

@@ -31,6 +31,7 @@ body {
     max-width: 100%;
     min-width: 300px;
     display: none;
+    animation: effect 0.7s alternate;
 }
 
 .img-crew.selecionado {
@@ -39,10 +40,20 @@ body {
 
 .info-crew{
     display: none;
+    animation: effect 0.7s alternate;
 }
 
 .info-crew.selecionado {
     display: block;
+}
+
+@keyframes effect {
+	from {
+		transform: scale(0.9);
+	}
+	to {
+		transform: scale(1);
+	}
 }
 
 .technical-team .crew .description .title {
